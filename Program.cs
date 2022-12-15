@@ -154,3 +154,121 @@
 // int sum = Summ(createdarray);
 // Console.WriteLine($"Сумма элементов, стоящих на нечётных позициях - {sum}");
 
+
+
+// Задайте массив вещественных чисел. Найдите разницу между максимальным 
+// и минимальным элементов массива.
+
+// [3 7 22 2 78] -> 76
+
+
+// int [] NewArray(int size, int min, int max)
+// {
+//     int [] array = new int[size];
+//     for (int i = 0; i<size; i++)
+//     {
+//         array[i] = new Random().Next(min, max);
+//     }
+//     return array;
+// }
+
+// void ShowArray(int [] array)
+// {
+//     for (int i = 0; i<array.Length; i++)
+//     {
+//         Console.Write($"{array[i]} ");
+//     }
+//     Console.WriteLine();
+// }
+
+// void FindMinMax(int [] array)
+// {
+//     int i = 0;
+//     int minv = array[0];
+//     int maxv = array[1];
+//     int temp = 0;
+//     if (minv>maxv)
+//     {
+//         temp = maxv;
+//         maxv = minv;
+//         minv = temp; 
+//     }
+//     while (i<array.Length){
+//     if (array[i]>maxv)
+//     {
+//         maxv = array[i];
+//         i++;
+//     }
+//     else if (array[i]<minv)
+//     {
+//         minv = array[i];
+//         i++;
+//     }
+//     else i++;
+//     }
+//     Console.WriteLine($"Максимальный элемент массива - {maxv}");
+//     Console.WriteLine($"Минимальный элемент массива - {minv}");
+//     Console.WriteLine($"Разница между максимальным и минимальным элементом массива - {maxv-minv}");
+// }
+
+// Console.WriteLine($"Enter size:");
+// int size = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Enter min ");
+// int min = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Enter max ");
+// int max = Convert.ToInt32(Console.ReadLine());
+
+// int [] myarray = NewArray(size, min, max);
+// ShowArray(myarray);
+// FindMinMax(myarray);
+
+
+// Найдите произведение пар чисел в одномерном массиве. Парой считаем первый 
+// и последний элемент, второй и предпоследний и т.д. Результат запишите в новом массиве.
+// [1 2 3 4 5] -> 5 8 3
+// [6 7 3 6] -> 36 21
+
+
+// int [] NewArray(int size, int min, int max)
+// {
+//     int [] array = new int[size];
+//     for (int i = 0; i<size; i++)
+//     {
+//         array[i] = new Random().Next(min, max);
+//     }
+//     return array;
+// }
+
+// void ShowArray(int [] array)
+// {
+//     for (int i = 0; i<array.Length; i++)
+//     {
+//         Console.Write($"{array[i]} ");
+//     }
+//     Console.WriteLine();
+// }
+
+// void FindPr(int [] array)
+// {
+//     int i = 0;
+//     int j = array.Length-1;
+//     while (i != j)
+//     { 
+//         Console.Write($"{array[i]*array[j]} ");
+//         i++;
+//         j--;
+//     }
+//         if (i == j){
+//         Console.Write($"{array[i]} ");}
+// }
+
+// Console.WriteLine($"Enter size:");
+// int size = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Enter min ");
+// int min = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Enter max ");
+// int max = Convert.ToInt32(Console.ReadLine());
+
+// int [] myarray = NewArray(size, min, max);
+// ShowArray(myarray);
+// FindPr(myarray);
